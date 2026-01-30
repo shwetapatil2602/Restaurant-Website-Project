@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="navigation">
+        <div class="main-div">
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+            <h1>Amrit Thal</h1>
+
+             <!-- BUTTON TO OPEN FORM -->
+<button type="button" class="orderbtn" onclick="openForm()">Order Now</button>
+
+            <select>
+                <option value="Menu">Menu</option>
+    <option value="starter">Starters</option>
+    <option value="main-course">Main Course</option>
+    <option value="south-indian">South Indian</option>
+    <option value="north-indian">North Indian</option>
+    <option value="chinese">Chinese</option>
+    <option value="fast-food">Fast Food</option>
+    <option value="dessert">Desserts</option>
+            </select>
+
+             <div class="search"><input type="text" placeholder="search.."></div>
+             <div></div>
+         <div class="a1">
+             <a href="contact.html">Contact Us</a>
+             </div>
+             <div>
+        <a href="https://maps.google.com" target="_blank">Mumbai,
+            <br> Maharashtra</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- courosal -->
+     <div class="front" id="home">
+     <div class="Courosal">
+        <div>
+            <div id="carouselExampleCaptions" class="carousel slide"
+     data-bs-ride="carousel"
+     data-bs-interval="4000"
+     data-bs-pause="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="pexels-rdne-5738245.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Moments Made Special</h2>
+        <p>Exquisite dishes, soft music, and love in the air.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="pexels-bertellifotografia-16120262.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Unforgettable Dining Experience</h2>
+        <p>Enjoy delicious food with a beautiful ambience and perfect vibes.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="pexels-khwanchai-4175032.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Fast & Fresh Delivery</h2>
+        <p>Your favorite meals delivered hot, fresh, and right on time.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        </div>
+        <div class="welcome">
+            <h1>Welcome Foodies</h1>
+  <p>
+    Good vibes, great food, and zero judgement for extra fries 😎  
+    Grab a seat, snap a pic, and let's eat!
+  </p>
+        </div>
+     </div>
+   
+   
+ </div>
+  <div class="right-div" >
+    <div class="hygiene-card">
+  <div class="badge">✔ Govt. Certified Hygiene</div>
+
+  <h2>Amrit Thali – Hygienic & Trusted</h2>
+
+  <p class="intro">
+    Your health and safety are our top priority. Amrit Thali strictly follows
+    all government-approved hygiene and food safety standards to ensure every
+    meal is safe, clean, and nutritious.
+  </p>
+
+  <ul class="points">
+    <li>🛡️ FSSAI Registered & Licensed</li>
+    <li>✅ Daily Kitchen Sanitization</li>
+    <li>👨‍🍳 Trained Staff with Hygiene Protocols</li>
+    <li>🥦 Fresh & Quality-Checked Ingredients</li>
+    <li>📋 Regular Government Health Inspections</li>
+  </ul>
+
+  <div class="footer">
+    <span>FSSAI License No: <b>XXXXXX12345</b></span>
+   <a href="https://fostac.fssai.gov.in/index" style="text-decoration:none; color: rgb(230, 228, 225);">Know more..</a>
+  </div>
+</div> 
+      <div>
+<button type="button" class="order-btn" onclick="openForm()">Order Now</button></div><div class="rajasthani_img">
+<img src="93f16ad8-ee81-45fe-a598-78e37c10ddfc.png"></div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const orderForm = document.getElementById("orderForm");
+  const form = document.getElementById("foodForm");
+  const status = document.getElementById("status");
+
+  // OPEN FORM
+  window.openForm = () => {
+    orderForm.style.display = "flex";
+    status.textContent = "";
+  };
+
+  // CLOSE FORM
+  window.closeForm = () => {
+    orderForm.style.display = "none";
+    status.textContent = "";
+    form.reset();
+  };
+
+  // SUBMIT FORM
+  window.orderNow = () => {
+    const name = form.name.value.trim();
+    const phone = form.phone.value.trim();
+    const dish = form.dish.value.trim();
+    const address = form.address.value.trim();
+
+    // Validation
+    if (!name || !phone || !dish || !address) {
+      status.textContent = "❌ Please fill all fields";
+      status.style.color = "yellow";
+      return;
+    }
+
+    if (!/^[0-9]{10,11}$/.test(phone)) {
+      status.textContent = "❌ Enter valid 10–11 digit phone number";
+      status.style.color = "yellow";
+      return;
+    }
+
+    // SUCCESS
+    status.textContent = "✅ Food is ordered successfully!";
+    status.style.color = "lightgreen";
+
+    setTimeout(() => {
+      closeForm();
+    }, 2000);
+  };
+});
+</script>
+
+<!-- POPUP FORM -->
+<div id="orderForm" class="form-popup" style="display:none;">
+  <div class="form-container">
+
+    <h2><b>Place your order</b></h2><br>
+
+    <!-- ✅ form id + name attributes -->
+    <form id="foodForm" onsubmit="return false">
+
+      <label>Name:</label>
+      <input type="text" name="name" placeholder="Name" required>
+
+      <label>Ph No:</label>
+      <input type="tel" name="phone" placeholder="Mobile Number" required>
+
+      <label>Dish Name:</label>
+      <input type="text" name="dish" placeholder="Dish Name" required>
+
+      <label>Address:</label>
+      <input type="text" name="address" placeholder="Address" required>
+
+      <button type="button" id="submitBtn" onclick="orderNow()">Submit Order</button>
+      <button type="button" onclick="closeForm()">Cancel</button>
+
+      <p id="status"></p>
+    </form>
+
+  </div>
+</div>
+
+     <div>
+        <div>
+            <div class="food-container">
+  <div class="food-card">
+    <img src="romantic-dinner-two-with-candlelight-fine-dining-setting_124507-133165.avif" alt="Romantic Dinner">
+    <h3>Candlelight Dinner</h3>
+    <p class="price">₹1,499</p>
+    <p class="offer">💝 20% OFF for Couples</p>
+    <button onclick="openForm()" >Order Now</button>
+  </div>
+
+  <div class="food-card">
+    <img src="463b0fb3238c8be1222f85cf35daa3c4.jpg" alt="Italian Pasta">
+    <h3>Italian Pasta</h3>
+    <p class="price">₹499</p>
+    <p class="offer">🔥 Buy 1 Get 1 Free</p>
+    <button onclick="openForm()">Order Now</button>
+  </div>
+
+  <div class="food-card">
+    <img src="0ec289492947872976c5c52215280faa.jpg" alt="Dessert">
+    <h3>Chocolate Dessert</h3>
+    <p class="price">₹299</p>
+    <p class="offer">🍫 Free Dessert with Dinner</p>
+    <button onclick="openForm()">Order Now</button>
+  </div>
+</div>
+ <h1 class="menu-title" style="color: indigo; font-weight: bolder;"> Dinner Menu</h1>
+
+<div class="food-container">
+
+  <div class="food-card">
+    <img src="romantic-dinner-two-with-candlelight-fine-dining-setting_124507-133165.avif">
+    <h3>Candlelight Dinner</h3>
+    <p class="price">₹1,499</p>
+    <p class="offer">💝 20% OFF for Couples</p>
+    <button onclick="openForm()">Order Now</button>
+  </div>
+
+  <div class="food-card">
+    <img src="463b0fb3238c8be1222f85cf35daa3c4.jpg">
+    <h3>Italian Pasta</h3>
+    <p class="price">₹499</p>
+    <p class="offer">🔥 Buy 1 Get 1 Free</p>
+    <button onclick="openForm()">Order Now</button>
+  </div>
+
+  <div class="food-card">
+    <img src="0ec289492947872976c5c52215280faa.jpg">
+    <h3>Chocolate Dessert</h3>
+    <p class="price">₹299</p>
+    <p class="offer">🍫 Free Dessert with Dinner</p>
+    <button onclick="openForm()">Order Now</button>
+  </div>
+
+  <div class="food-card">
+    <img src="Rooftop.webp">
+    <h3>Romantic Rooftop Dinner</h3>
+    <p class="price">₹2,499</p>
+    <p class="offer">🌙 Free Mocktails</p>
+    <button onclick="openForm()">Order Now</button>
+  </div>
+
+  <div class="food-card">
+    <img src="Creamy Dreamy Chicken & Mushroom Tagliatelle Delight.jpg">
+    <h3>Creamy Alfredo Pasta</h3>
+    <p class="price">₹549</p>
+    <p class="offer">🍝 20% OFF</p>
+    <button onclick="openForm()">Order Now</button>
+  </div>
+
+  <div class="food-card">
+    <img src="Peruvian Chicken with Creamy Green Sauce_ A Savory Delight.jpg">
+    <h3>Grilled Chicken</h3>
+    <p class="price">₹899</p>
+    <p class="offer">🍷 Perfect Pairing</p>
+    <button onclick="openForm()">Order Now</button>
+  </div>
+
+  <div class="food-card">
+    <img src="Gooey Garlic Cheese Bread Recipe_ Cheesy, Buttery, and Irresistible.jpg">
+    <h3>Cheesy Garlic Bread</h3>
+    <p class="price">₹299</p>
+    <p class="offer">🧀 Free Dip</p>
+    <button onclick="openForm()">Order Now</button>
+  </div>
+
+  <div class="food-card">
+    <img src="chokolava.jpg">
+    <h3>Chocolate Lava Cake</h3>
+    <p class="price">₹349</p>
+    <p class="offer">🍫 Best Seller</p>
+    <button onclick="openForm()">Order Now</button>
+  </div>
+
+  <div class="food-card">
+    <img src="strawberry.jpg">
+    <h3>Strawberry Cheesecake</h3>
+    <p class="price">₹399</p>
+    <p class="offer">🍓 Limited Time</p>
+    <button onclick="openForm()">Order Now</button>
+  </div>
+
+  <div class="food-card">
+    <img src="sizzling brownie.jpg">
+    <h3>Sizzling Brownie</h3>
+    <p class="price">₹449</p>
+    <p class="offer">🍨 Crowd Favorite</p>
+    <button onclick="openForm()">Order Now</button>
+  </div>
+
+  
+</div>
+<!-- sidebar -->
+ <script>
+        function toggleMenu()
+        {
+document.querySelector(".sidebar").classList.toggle("active");
+        }
+        function closeSidebar() {
+    document.querySelector(".sidebar").classList.remove("active");
+}
+    </script>
+        
+    </div>
+     <!--Sidebar-->
+    <div class="sidebar">
+         <h2>Welcome!</h2>
+      <li><a href="menu.html" style="color: white; text-decoration: none;">Menu</a></li>
+        <li><a href="offers.html" style="color: white; text-decoration: none;">Offers</a></li>
+        <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+    </div>
+   
+  <footer class="footer2">
+    <div class="footer-box">
+
+        <div class="footer-section">
+            <h3>Restaurant-Amrit Thaal</h3>
+            <p>With love and freshness..</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </div>
+
+       <footer class="footer">
+
+    <div class="footer-box">
+
+        <div class="footer-section">
+            <h3>About Our Restaurant</h3>
+            <p>
+                Our restaurant offers a wide variety of delicious vegetarian and
+                non-vegetarian dishes prepared with fresh ingredients and authentic
+                spices. We focus on providing high-quality food, hygienic preparation,
+                and excellent customer service. Our chefs are experienced in cooking
+                traditional as well as modern cuisines.
+            </p>
+            <p>
+                We serve North Indian, South Indian, Chinese, and Continental dishes.
+                Separate cooking areas are maintained for vegetarian and non-vegetarian
+                food to ensure taste, hygiene, and customer satisfaction.
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Our Menu Highlights</h3>
+            <p>
+                • Vegetarian Specialties: Paneer dishes, Veg Thali, South Indian meals,
+                snacks, and desserts.<br><br>
+                • Non-Vegetarian Specialties: Chicken, Mutton, Fish curries, Biryani,
+                kebabs, and chef’s special recipes.<br><br>
+                • Jain Food and No Onion No Garlic options available on request.
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Our Services</h3>
+            <p>
+                • Dine-In, Takeaway, and Home Delivery<br>
+                • Online Food Ordering<br>
+                • Family and Group Dining<br>
+                • Birthday Party and Event Catering<br>
+                • Corporate Lunch and Dinner Services<br>
+                • Custom Meal and Combo Offers
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact & Timings</h3>
+            <p>
+                Address: Shop No. 12, Near City Mall, Kalyan, Maharashtra<br><br>
+                Phone: +91 98765 43210<br><br>
+                Email: contact@restaurant.com<br><br>
+                Opening Hours:<br>
+                Monday – Sunday: 10:00 AM – 11:30 PM
+            </p>
+        </div>
+         <div class="footer-bottom">
+        <p>
+            © 2026 Veg & Non-Veg Restaurant. All Rights Reserved.
+        </p>
+    </div>
+
+    </div>
+
+   
+
+</footer>
+
+
+    
+</body>
+</html>

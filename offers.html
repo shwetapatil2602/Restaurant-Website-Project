@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChatPate | Offers</title>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<!-- NAVIGATION  -->
+<div style="display: flex; background-color: rgb(8, 8, 56); color: white; text-decoration:none; height: 70px;">
+  <div style="display: flex; background-color: rgb(8, 8, 56); height: 70px; align-items: center; padding: 0 20px;">
+    <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 20px;">
+      <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="menu.html" style="color: white; text-decoration: none;">Menu</a></li>
+        <li><a href="offers.html" style="color: white; text-decoration: none;">Offers</a></li>
+        <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+    </ul>
+</div>
+
+    
+  </div>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const orderForm = document.getElementById("orderForm");
+  const form = document.getElementById("foodForm");
+  const status = document.getElementById("status");
+
+  // OPEN FORM
+  window.openForm = () => {
+    orderForm.style.display = "flex";
+    status.textContent = "";
+  };
+
+  // CLOSE FORM
+  window.closeForm = () => {
+    orderForm.style.display = "none";
+    status.textContent = "";
+    form.reset();
+  };
+
+  // SUBMIT FORM
+  window.orderNow = () => {
+    const name = form.name.value.trim();
+    const phone = form.phone.value.trim();
+    const dish = form.dish.value.trim();
+    const address = form.address.value.trim();
+
+    // Validation
+    if (!name || !phone || !dish || !address) {
+      status.textContent = "❌ Please fill all fields";
+      status.style.color = "yellow";
+      return;
+    }
+
+    if (!/^[0-9]{10,11}$/.test(phone)) {
+      status.textContent = "❌ Enter valid 10–11 digit phone number";
+      status.style.color = "yellow";
+      return;
+    }
+
+    // SUCCESS
+    status.textContent = "✅ Food is ordered successfully!";
+    status.style.color = "lightgreen";
+
+    setTimeout(() => {
+      closeForm();
+    }, 2000);
+  };
+});
+</script>
+
+<!-- POPUP FORM -->
+<div id="orderForm" class="form-popup" style="display:none;">
+  <div class="form-container">
+
+    <h2><b>Place your order</b></h2><br>
+
+    <!-- ✅ form id + name attributes -->
+    <form id="foodForm" onsubmit="return false">
+
+      <label>Name:</label>
+      <input type="text" name="name" placeholder="Name" required>
+
+      <label>Ph No:</label>
+      <input type="tel" name="phone" placeholder="Mobile Number" required>
+
+      <label>Dish Name:</label>
+      <input type="text" name="dish" placeholder="Dish Name" required>
+
+      <label>Address:</label>
+      <input type="text" name="address" placeholder="Address" required>
+
+      <button type="button" id="submitBtn" onclick="orderNow()">Submit Order</button>
+      <button type="button" onclick="closeForm()">Cancel</button>
+
+      <p id="status"></p>
+    </form>
+
+  </div>
+</div>
+
+<!-- OFFERS SECTION -->
+<section class="offers">
+    <h1 style="color: black;">🔥 Special Offers 🔥</h1>
+
+    <div class="food-container">
+
+        <div class="food-card">
+            <h3>Couple Combo 💑</h3>
+            <p>20% OFF – Because love tastes better with butter chicken.</p>
+            <button onclick="openForm()" >Order Now</button>
+        </div>
+
+        <div class="food-card">
+            <h3>Pasta Fiesta 🍝</h3>
+            <p>Buy 1 Get 1 Free – One for you, one for your hunger.</p>
+            <button onclick="openForm()" >Order Now</button>
+        </div>
+
+        <div class="food-card">
+            <h3>Weekend Veg Thali 🥗</h3>
+            <p>₹249 only – Even your diet will forgive you.</p>
+            <button onclick="openForm()" >Order Now</button>
+        </div>
+
+        <div class="food-card">
+            <h3>Dessert Madness 🍰</h3>
+            <p>Free Lava Cake on orders above ₹999.</p>
+           <button onclick="openForm()" >Order Now</button>
+        </div>
+
+        <div class="food-card">
+            <h3>Mocktail Happy Hours 🥤</h3>
+            <p>50% OFF from 5PM–7PM – Sip sip hooray!</p>
+             <button onclick="openForm()" >Order Now</button>
+        </div>
+
+    </div>
+</section>
+<!-- ================= FOOTER ================= -->
+<footer class="footer2">
+
+  <div class="footer-box">
+
+    <div class="footer-section">
+      <h3>Restaurant – Amrit Thaal</h3>
+      <p>With love and freshness.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="offers.html">Offers</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-section">
+      <h3>About Us</h3>
+      <p>
+        We serve hygienic, delicious vegetarian and non-vegetarian meals
+        prepared with fresh ingredients and authentic spices.
+      </p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact & Timings</h3>
+      <p>
+        Kalyan, Maharashtra<br><br>
+        Phone: +91 98765 43210<br><br>
+        Mon – Sun: 10:00 AM – 11:30 PM
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Veg & Non-Veg Restaurant. All Rights Reserved.</p>
+  </div>
+
+</footer>
+
+</body>
+</html>
